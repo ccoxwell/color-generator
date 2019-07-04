@@ -8,6 +8,7 @@ const PORT = process.env.PORT;
 const API_HOST = "color-generator-api-cc.herokuapp.com";
 
 app.get("/proxy/generate-color", function(req, res) {
+    
     var options = {
         host: API_HOST,
         path: "/api/v1/color"
